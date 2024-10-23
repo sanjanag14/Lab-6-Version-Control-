@@ -13,12 +13,14 @@ def encode(password):
 def decode(encoded_password):
     """
     Decodes an 8-digit password by reversing the encoding process.
-    Example: '45678888' becomes '12345555'
     """
+    #Mert's part, at least what was supposed to be, changes in the file for lab 6
     decoded_password = ""
+   
     for digit in encoded_password:
         new_digit = (int(digit) - 3) % 10  # Reverses the shift, wraps around before 0
         decoded_password += str(new_digit)
+    
     return decoded_password
 
 
