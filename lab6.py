@@ -12,7 +12,7 @@ def encode(password):
 
 def decode(encoded_password):
     """
-    Decodes an 8-digit password by reversing the encoding process.
+    Decodes an 8-digit password by reversing the encoding process
     """
     #Mert's part, at least what was supposed to be, changes in the file for lab 6
     decoded_password = ""
